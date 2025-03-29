@@ -1,6 +1,6 @@
 # PekkaAI - AI Tools Directory
 
-A modern, user-friendly directory of AI tools and resources, helping users discover and explore the best AI solutions for their needs.
+PekkaAI is a comprehensive, modern directory platform designed to help users navigate the rapidly evolving landscape of artificial intelligence tools and resources. Our carefully curated collection makes it easy to discover, compare, and choose the perfect AI solutions for your specific needs. Whether you're a developer, designer, content creator, or business professional, PekkaAI provides detailed information, honest reviews, and practical insights to help you make informed decisions about which AI tools will best serve your workflow and objectives. With regular updates and a focus on user experience, we ensure you stay up-to-date with the latest and most effective AI technologies available.
 
 ## Features
 
