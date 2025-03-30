@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 28, 28, 30;
-  --background-end-rgb: 35, 35, 38;
+  --background-end-rgb: 15, 15, 18;
+  --background-start-rgb: 08, 08, 08;
   --accent-purple: 147, 51, 234;
 }
 
@@ -13,7 +13,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
     to bottom,
-    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb)),
     rgb(var(--background-end-rgb))
   );
   min-height: 100vh;

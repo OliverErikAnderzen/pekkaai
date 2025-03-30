@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
@@ -29,23 +31,41 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-[#1a1b1e]">
+    <div className="min-h-screen bg-[#080808]">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1a1b1e] border-b border-[#2a2b2e]">
-        <div className="flex items-center justify-between px-6 h-16">
-          <a href="/" className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-300 hover:to-purple-500 transition-colors">
-            PekkaAI
-          </a>
-          <div className="flex items-center gap-6">
-            <a href="/about" className="text-gray-400 hover:text-white transition-colors">
-              About
-            </a>
-            <a href="/contact" className="text-white transition-colors">
-              Contact
-            </a>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm border-b border-white/10">
+        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <Link href="/" className="flex items-center space-x-2 group">
+              <div className="relative w-8 h-8">
+                <Image
+                  src="/pekkalogo.png"
+                  alt="PekkaAI Logo"
+                  fill
+                  className="object-contain group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text group-hover:from-purple-500 group-hover:via-pink-600 group-hover:to-red-600 transition-all duration-300 group-hover:scale-105">
+                PekkaAI
+              </span>
+            </Link>
           </div>
-        </div>
-      </nav>
+          <div className="flex items-center space-x-6">
+            <Link
+              href="/about"
+              className="text-gray-400 hover:text-purple-400 transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              href="/contact"
+              className="text-white hover:text-purple-400 transition-colors"
+            >
+              Contact
+            </Link>
+          </div>
+        </nav>
+      </header>
 
       {/* Main Content */}
       <main className="pt-16">
@@ -208,16 +228,6 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a href="/tools" className="text-gray-400 hover:text-white transition-colors text-sm">
-                    Tools
-                  </a>
-                </li>
-                <li>
-                  <a href="/about" className="text-gray-400 hover:text-white transition-colors text-sm">
-                    About
-                  </a>
-                </li>
-                <li>
                   <a href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">
                     Contact
                   </a>
@@ -248,12 +258,22 @@ export default function Contact() {
               <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Connect</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  <a
+                    href="https://twitter.com/pekkaai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                  >
                     Twitter
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  <a
+                    href="https://linkedin.com/company/pekkaai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                  >
                     LinkedIn
                   </a>
                 </li>

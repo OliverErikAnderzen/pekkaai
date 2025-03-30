@@ -55,6 +55,71 @@ PekkaAI is a comprehensive, modern directory platform designed to help users nav
 
 5. **Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.**
 
+## Deployment
+
+### Option 1: Vercel (Recommended)
+
+1. **Push your code to GitHub**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **Deploy on Vercel**
+   - Go to [Vercel](https://vercel.com)
+   - Import your GitHub repository
+   - Configure your project settings
+   - Add your environment variables
+   - Deploy!
+
+3. **Domain Configuration**
+   - In Vercel dashboard, go to your project settings
+   - Navigate to "Domains"
+   - Add your custom domain
+   - Follow DNS configuration instructions
+   - Wait for SSL certificate to be issued
+
+### Option 2: Netlify
+
+1. **Build your project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy on Netlify**
+   - Go to [Netlify](https://netlify.com)
+   - Connect your GitHub repository
+   - Configure build settings:
+     - Build command: `npm run build`
+     - Publish directory: `.next`
+   - Deploy!
+
+3. **Domain Setup**
+   - In Netlify dashboard, go to "Domain settings"
+   - Add your custom domain
+   - Configure DNS settings
+   - Enable HTTPS
+
+### Option 3: AWS Amplify
+
+1. **Prepare your project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy on AWS Amplify**
+   - Go to [AWS Amplify](https://aws.amazon.com/amplify)
+   - Connect your GitHub repository
+   - Configure build settings
+   - Deploy!
+
+3. **Domain Configuration**
+   - In Amplify Console, go to "Domain Management"
+   - Add your custom domain
+   - Configure DNS settings
+   - Enable SSL/TLS
+
 ## Security Features
 
 - HTTPS enforcement with HSTS
@@ -79,4 +144,8 @@ pekkaai/
 ├── .env.example         # Example environment variables
 └── next.config.js       # Next.js configuration
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
